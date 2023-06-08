@@ -186,3 +186,22 @@ button {
   border: none;
   outline: none;
 }
+
+header {
+  background-color: grey;
+  padding: 20px 0;
+}
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+header ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+}
