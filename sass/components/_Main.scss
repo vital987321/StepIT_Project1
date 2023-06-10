@@ -1,0 +1,49 @@
+main{
+    font-family: 'Poppins', sans-serif;
+    .brands{
+        padding: 50px 0;
+        background-color: lightgray;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        .description{
+            text-align: center;
+            h1{
+                font-weight: 600;
+                span{
+                    color: white;
+                }
+            }
+            button{
+                background-color: grey;
+                color: white;
+                margin-top: 20px;
+                padding: 10px 20px;
+            }
+        }
+            
+    }
+    .categories{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgb(232, 232, 232);
+        padding: 50px 0px;
+        
+        h4{
+                margin: 20px 0;
+                margin-left: 20px;
+            }
+        a{
+            display: inline-block;
+            font-weight: 500;
+            height: 2rem;    
+            color: black;
+            border-bottom: 1px solid black;
+            margin-left: 20px;
+        }    
+        
+        
+        
+    }
+}

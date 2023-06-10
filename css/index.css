@@ -188,20 +188,109 @@ button {
 }
 
 header {
-  background-color: grey;
-  padding: 20px 0;
+  background-color: lightgray;
+  padding: 5px 0;
+  font-family: "Poppins", sans-serif;
 }
-header ul {
+header .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+header .contact li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+}
+header .header-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+header .header-section .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header-section .menu li a {
+  color: black;
+}
+header .header-section .tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 15vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main {
+  font-family: "Poppins", sans-serif;
+}
+main .brands {
+  padding: 50px 0;
+  background-color: lightgray;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-header ul li {
+main .brands .description {
+  text-align: center;
+}
+main .brands .description h1 {
+  font-weight: 600;
+}
+main .brands .description h1 span {
+  color: white;
+}
+main .brands .description button {
+  background-color: grey;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+main .categories {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: white;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: rgb(232, 232, 232);
+  padding: 50px 0px;
+}
+main .categories h4 {
+  margin: 20px 0;
+  margin-left: 20px;
+}
+main .categories a {
+  display: inline-block;
+  font-weight: 500;
+  height: 2rem;
+  color: black;
+  border-bottom: 1px solid black;
+  margin-left: 20px;
 }
