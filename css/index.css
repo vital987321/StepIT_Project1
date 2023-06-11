@@ -294,3 +294,41 @@ main .categories a {
   border-bottom: 1px solid black;
   margin-left: 20px;
 }
+main .disposable-parts h4 {
+  text-align: center;
+  margin-top: 40px;
+}
+main .disposable-parts small {
+  display: block;
+  text-align: center;
+  color: grey;
+  margin-top: 20px;
+}
+main .disposable-parts .part-list {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+main .disposable-parts .part-list li ul {
+  margin-top: 20px;
+}
+main .disposable-parts .part-list li ul li {
+  font-size: small;
+}
+main .disposable-parts .part-list li p {
+  font-weight: 500;
+  margin-top: 10px;
+}
+main .disposable-parts .view-more-link-conteiner {
+  text-align: center;
+}
+main .disposable-parts a {
+  display: inline-block;
+  font-weight: 500;
+  height: 2rem;
+  color: black;
+  border-bottom: 1px solid black;
+}
