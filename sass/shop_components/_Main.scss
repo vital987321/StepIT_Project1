@@ -1,0 +1,64 @@
+@mixin view-more-link{
+    display: inline-block;
+    font-weight: 500;
+    height: 2rem;    
+    color: black;
+    border-bottom: 1px solid black;
+}
+@mixin button-settings{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+@mixin section-settings{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+main{
+    font-family: 'Poppins', sans-serif;
+    .title-section{
+        position: relative;
+        height: 316px;
+        background-image: url(../../assets/shop_title.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        .logo-container{
+            position: absolute;
+            right: 25%;
+        }
+        h1{
+            text-align: center;
+            padding-top: 100px;
+            font-size: 3rem;
+            font-weight: 500;
+        }
+        .address{
+            text-align: center;
+            a{
+                color: black;
+            }
+        }
+
+    }
+    .filter-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10%;
+        background-color: lightgrey;
+        .filter-parameters{
+            display: flex;
+            align-items: center;
+           
+        }
+        .sorting-parameters{
+            display: flex;
+            align-items: center;
+        }
+         li{
+                margin-left: 20px;
+            }
+    }
+    
+}
