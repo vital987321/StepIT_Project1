@@ -488,6 +488,7 @@ footer .upper-section .grid-container {
 }
 footer .upper-section .grid-container form input {
   border-bottom: 1px solid black;
+  height: auto;
 }
 footer .upper-section .grid-container form #email {
   font-size: smaller;

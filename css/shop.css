@@ -268,6 +268,7 @@ main .title-section .address a {
   color: black;
 }
 main .filter-section {
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,6 +280,9 @@ main .filter-section {
           align-items: center;
   padding: 20px 10%;
   background-color: lightgrey;
+}
+main .filter-section li {
+  margin-left: 20px;
 }
 main .filter-section .filter-parameters {
   display: -webkit-box;
@@ -296,8 +300,72 @@ main .filter-section .sorting-parameters {
       -ms-flex-align: center;
           align-items: center;
 }
-main .filter-section li {
-  margin-left: 20px;
+main .filter-section .sorting-parameters .white-box {
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: grey;
+}
+main .goods-section .goods-list {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  text-align: center;
+}
+main .goods-section .goods-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 30px 0;
+}
+main .goods-section .goods-list li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  width: 220px;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+main .goods-section .goods-list li a:hover {
+  scale: 1.1;
+  -webkit-box-shadow: 0px 0px 5px grey;
+          box-shadow: 0px 0px 5px grey;
+  background-color: rgb(241, 241, 241);
+}
+main .goods-section .goods-list li a img {
+  width: 200px;
+}
+main .goods-section .goods-list li a .goods-description {
+  text-align: left;
+  padding-left: 20px;
+  color: black;
+}
+main .goods-section .goods-list li a .goods-description p:nth-child(2) {
+  margin-top: 5px;
+}
+main .goods-section .goods-list li a .goods-description p:nth-child(3) {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 5px;
+}
+main .goods-section .pagination {
+  text-align: center;
+  margin-top: 20px;
 }
 
 footer {
@@ -332,6 +400,7 @@ footer .upper-section .grid-container {
 }
 footer .upper-section .grid-container form input {
   border-bottom: 1px solid black;
+  height: auto;
 }
 footer .upper-section .grid-container form #email {
   font-size: smaller;
