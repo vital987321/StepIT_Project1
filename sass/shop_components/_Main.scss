@@ -116,6 +116,25 @@ main{
             margin-top: 20px;
         }
     }
+    .conditions-section{
+        background-color: lightgray;
+        margin-top: 60px;
+        padding: 60px 0;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li {
+                h5{
+                    font-weight: 500;
+                }
+                &:nth-child(2){
+                    margin: 0 40px;
+                }
+            }
+
+        }
+
+    }
 
     
 }

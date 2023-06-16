@@ -1,45 +1,45 @@
+@mixin li_a{
+    padding: 10px 20px;
+        border-radius: 10px;
+        color: black;
+        
+        &:hover {
+            background-color: rgb(170, 170, 170);
+        }
+}
 header {
     background-color: lightgray;
     padding: 5px 0;
     font-family: 'Poppins', sans-serif;
-    .contact {
-        display: flex;
-        display: none;
-        justify-content: space-evenly;
-
-        li {
-            display: flex;
-            color: white;
-        }
-    }
     .header-section{
         display: flex;
-        justify-content: space-around;
-        
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
         .menu{
             display: flex;
-            width: 40vw;
-            // border: 1px solid grey;
+            max-width: 45%;
             justify-content: space-between;
             align-items: center;
             
             li{
-                a{
-                    color: black;
+                margin-left: 5%;
+                a{  
+                    @include li_a;
                 }
-
             }
         }
         
         .tools{
             display: flex;
-            width: 15vw;
-            // border: 1px solid grey;
+            max-width: 30%;
             justify-content: space-between;
             align-items: center;
             li{
-                // margin-left: 30px;
-                // height: 10px;
+                a{
+                    @include li_a;
+                }
+
             }
         }
 

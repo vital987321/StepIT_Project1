@@ -163,6 +163,10 @@ template {
 }
 
 
+:root {
+  --link_unrerline_length: 20px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -170,6 +174,11 @@ template {
 
 a {
   text-decoration: none;
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
 }
 
 li {
@@ -192,33 +201,21 @@ header {
   padding: 5px 0;
   font-family: "Poppins", sans-serif;
 }
-header .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: none;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-header .contact li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: white;
-}
 header .header-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 header .header-section .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 40vw;
+  max-width: 45%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -226,14 +223,22 @@ header .header-section .menu {
       -ms-flex-align: center;
           align-items: center;
 }
+header .header-section .menu li {
+  margin-left: 5%;
+}
 header .header-section .menu li a {
+  padding: 10px 20px;
+  border-radius: 10px;
   color: black;
+}
+header .header-section .menu li a:hover {
+  background-color: rgb(170, 170, 170);
 }
 header .header-section .tools {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 15vw;
+  max-width: 30%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -241,6 +246,15 @@ header .header-section .tools {
       -ms-flex-align: center;
           align-items: center;
 }
+header .header-section .tools li a {
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: black;
+}
+header .header-section .tools li a:hover {
+  background-color: rgb(170, 170, 170);
+}
+
 main {
   font-family: "Poppins", sans-serif;
 }
@@ -366,6 +380,25 @@ main .goods-section .goods-list li a .goods-description p:nth-child(3) {
 main .goods-section .pagination {
   text-align: center;
   margin-top: 20px;
+}
+main .conditions-section {
+  background-color: lightgray;
+  margin-top: 60px;
+  padding: 60px 0;
+}
+main .conditions-section ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main .conditions-section ul li h5 {
+  font-weight: 500;
+}
+main .conditions-section ul li:nth-child(2) {
+  margin: 0 40px;
 }
 
 footer {
