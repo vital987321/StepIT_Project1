@@ -174,8 +174,10 @@ main{
             justify-content: center;
             li{
                 text-align: center;
-                &:nth-child(2){
-                    margin: 0 2%;
+                margin: 0 1%;
+
+                img{
+                    width: 100%;
                 }
                 .blog-description{
                     margin-top: 30px;
@@ -216,6 +218,7 @@ main{
         padding-top: 100px;
         padding-bottom: 120px;
         background-image: url("../../assets/Instagram_background.png");
+        background-size: cover;
         text-align: center;
         h1{
             font-size:  3rem;

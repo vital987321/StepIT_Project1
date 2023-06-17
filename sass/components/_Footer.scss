@@ -3,6 +3,9 @@ footer{
         font-family: 'Poppins', sans-serif;
         a{
             color: black;
+            &:hover{
+                text-decoration: underline;
+            }
         }
     .upper-section{
         display: flex;
@@ -48,6 +51,52 @@ footer{
         padding-bottom: 40px;
         p{
             margin-top: 30px;
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    footer{
+        .upper-section{
+            flex-direction: column-reverse;
+            align-items: center;
+            .grid-container{
+                width: 95%;
+            }
+        }
+    }
+}
+@media screen and (max-width:800px) {
+    footer {
+        .upper-section {
+            flex-direction: column-reverse;
+            align-items: center;
+
+            .grid-container {
+                width: 95%;
+                height: 500px;
+                grid-template-columns: 1fr;
+                text-align: center;
+                .item-8 {
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                }
+                
+                .item-10 {
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                }
+                .item-6{
+                    grid-row-start: 11;
+                }
+                
+                .item-4 {
+                    grid-row-start: 2;
+                }
+                .item-7 {
+                    grid-row-start: 3;
+                }
+
         }
     }
 }
