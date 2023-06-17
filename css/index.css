@@ -586,7 +586,7 @@ main .blogs .view-more-link-conteiner .view-more:hover {
 main .instagram {
   padding-top: 100px;
   padding-bottom: 120px;
-  background-image: url(/StepIT_Project1/assets/shop_title.png), url(../assets/shop_title.png);
+  background-image: url(/StepIT_Project1/assets/shop_title.png), url(/../assets/shop_title.png);
   background-size: cover;
   text-align: center;
 }
