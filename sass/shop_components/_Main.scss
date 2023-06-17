@@ -20,7 +20,8 @@ main{
     .title-section{
         position: relative;
         height: 316px;
-        background-image: url(../../assets/shop_title.png);
+        // background-image: url(../../assets/shop_title.png);
+        background: url(../../assets/shop_title.png);
         background-repeat: no-repeat;
         background-size: 100%;
         .logo-container{
