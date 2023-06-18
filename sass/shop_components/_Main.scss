@@ -22,7 +22,7 @@ main{
         height: 316px;
         background-image: url(/StepIT_Project1/assets/shop_title.png), url(../assets/shop_title.png);
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
         .logo-container{
             position: absolute;
             right: 25%;
@@ -70,6 +70,8 @@ main{
     }
     .goods-section{
         .goods-list{
+            max-width: 1200px;
+            margin: 0 auto;
             display: grid;
             grid-template-columns: auto auto auto auto;
             text-align: center;
@@ -122,7 +124,10 @@ main{
         padding: 60px 0;
         ul{
             display: flex;
+            max-width: 1200px;
             justify-content: space-between;
+            margin: 0 auto;
+            padding: 0 50px;
             li {
                 h5{
                     font-weight: 500;
@@ -137,4 +142,52 @@ main{
     }
 
     
+}
+@media screen and (max-width:1200px) {
+    main {
+        .goods-section {
+            .goods-list{
+                grid-template-columns: auto auto auto;
+            }
+        }
+    }
+}
+@media screen and (max-width:800px) {
+    main {
+        .filter-section {
+            flex-direction: column;
+            .sorting-parameters {
+                margin-top: 20px;
+            }
+        }
+        .goods-section {
+            .goods-list {
+                grid-template-columns: auto auto;
+            }
+        }
+        .conditions-section{
+            padding: 0px 0 50px 0;
+            ul{
+                flex-direction: column;
+                li{
+                    &:nth-child(2) {
+                            margin: 0 0px;
+                        }
+                    h5{
+                        margin-top: 50px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:500px) {
+    main {
+        .goods-section {
+            .goods-list {
+                grid-template-columns: auto;
+            }
+        }
+    }
 }

@@ -340,6 +340,7 @@ main .brands {
           align-items: center;
 }
 main .brands .description {
+  width: 50%;
   text-align: center;
 }
 main .brands .description h1 {
@@ -359,6 +360,14 @@ main .brands .description button:hover {
   text-decoration: underline;
   -webkit-box-shadow: 0px 0px 5px rgb(17, 17, 17);
           box-shadow: 0px 0px 5px rgb(17, 17, 17);
+}
+main .brands .image {
+  width: 50%;
+}
+main .brands .image img {
+  max-width: 536px;
+  width: 100%;
+  height: auto;
 }
 main .categories {
   display: -webkit-box;
@@ -426,6 +435,7 @@ main .disposable-parts .part-list li a {
           justify-content: space-between;
   padding: 15px 15px;
   width: 200px;
+  color: black;
   border-radius: 15px;
   -webkit-transition: all 0.2s ease 0s;
   transition: all 0.2s ease 0s;
@@ -610,6 +620,113 @@ main .instagram button:hover {
           box-shadow: 0px 0px 5px rgb(17, 17, 17);
 }
 
+@media screen and (max-width: 1200px) {
+  main .categories .category-1 img {
+    width: 90%;
+  }
+  main .categories .category-2 img {
+    width: 90%;
+  }
+  main .disposable-parts .part-list li a {
+    width: 15vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  main .brands {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  main .brands .description {
+    width: 90%;
+  }
+  main .brands .image {
+    width: 90%;
+    text-align: center;
+  }
+  main .categories {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .categories .category-1 img {
+    max-width: 519px;
+    width: 90%;
+  }
+  main .categories .category-1 h4 {
+    margin-left: 0;
+    text-align: center;
+  }
+  main .categories .category-1 .link-container {
+    text-align: center;
+  }
+  main .categories .category-1 .view-more {
+    margin-left: 0;
+  }
+  main .categories .category-2 {
+    margin-top: 50px;
+  }
+  main .categories .category-2 img {
+    max-width: 355px;
+    width: 90%;
+  }
+  main .categories .category-2 h4 {
+    margin-left: 0;
+    text-align: center;
+  }
+  main .categories .category-2 .link-container {
+    text-align: center;
+  }
+  main .categories .category-2 .view-more {
+    margin-left: 0;
+  }
+  main .disposable-parts .part-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .disposable-parts .part-list li a {
+    margin-top: 50px;
+    width: 70vw;
+    max-width: 300px;
+  }
+  main .oil .oil-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .oil .oil-container img {
+    width: 90%;
+  }
+  main .oil .oil-container .oli-description {
+    width: 80%;
+  }
+  main .blogs ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90vw;
+    max-width: 500px;
+    margin-top: 0px;
+  }
+  main .blogs ul li {
+    margin-top: 70px;
+  }
+}
 footer {
   padding-top: 50px;
   font-family: "Poppins", sans-serif;

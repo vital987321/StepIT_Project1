@@ -331,7 +331,7 @@ main .title-section {
   height: 316px;
   background-image: url(/StepIT_Project1/assets/shop_title.png), url(../assets/shop_title.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 main .title-section .logo-container {
   position: absolute;
@@ -389,6 +389,8 @@ main .filter-section .sorting-parameters .white-box {
   color: grey;
 }
 main .goods-section .goods-list {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: auto auto auto auto;
   text-align: center;
@@ -458,9 +460,12 @@ main .conditions-section ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 1200px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 50px;
 }
 main .conditions-section ul li h5 {
   font-weight: 500;
@@ -469,6 +474,45 @@ main .conditions-section ul li:nth-child(2) {
   margin: 0 40px;
 }
 
+@media screen and (max-width: 1200px) {
+  main .goods-section .goods-list {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  main .filter-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .filter-section .sorting-parameters {
+    margin-top: 20px;
+  }
+  main .goods-section .goods-list {
+    grid-template-columns: auto auto;
+  }
+  main .conditions-section {
+    padding: 0px 0 50px 0;
+  }
+  main .conditions-section ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .conditions-section ul li:nth-child(2) {
+    margin: 0 0px;
+  }
+  main .conditions-section ul li h5 {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .goods-section .goods-list {
+    grid-template-columns: auto;
+  }
+}
 footer {
   padding-top: 50px;
   font-family: "Poppins", sans-serif;
